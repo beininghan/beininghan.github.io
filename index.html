@@ -8,7 +8,7 @@
     <meta name="author" content="Beining Han">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" type="text/css" href="stylesheet.css">
-    
+
   </head>
 
   <body>
@@ -22,14 +22,9 @@
                   Beining Han (韩贝宁)
                 </p>
                 <p>
-                  I'm a Ph.D. candidate in Computer Science at Princeton University, advised by Prof. <a href="https://www.cs.princeton.edu/~jiadeng/">Jia Deng</a>. 
-                  Previously, I recieved B.Eng. in <a href="https://iiis.tsinghua.edu.cn/en/yaoclass/">Yao Class</a> at Tsinghua University in 2022. 
-                  It was my pleasure to work with Prof. <a href="https://engineering.washu.edu/faculty/Chongjie-Zhang.html">Chongjie Zhang</a>, 
-                  Prof. <a href="https://jianpeng.web.engr.illinois.edu">Jian Peng</a>, 
-                  Prof. <a href="https://qzc.tsinghua.edu.cn/en/info/1206/1914.html">Yuan Zhou</a>, 
-                  Prof. <a href="https://jimmylba.github.io/">Jimmy Ba</a>,
-                  Prof. <a href="https://ai.stanford.edu/~cbfinn/">Chelsea Finn</a> during my undergrad.
-                  I am interning at NVIDIA Robotics Lab (Seattle) in Summer 2025.
+                  I'm a Ph.D. candidate in Computer Science at Princeton University, advised by Prof. <a href="https://www.cs.princeton.edu/~jiadeng/">Jia Deng</a>.
+                  Previously, I recieved B.Eng. in <a href="https://iiis.tsinghua.edu.cn/en/yaoclass/">Yao Class</a> at Tsinghua University in 2022,
+                  advised by Prof. <a href="https://engineering.washu.edu/faculty/Chongjie-Zhang.html">Chongjie Zhang</a>. It is my pleasure to intern at NVIDIA <a href="https://research.nvidia.com/labs/srl/">SRL</a>, <a href="https://research.nvidia.com/labs/lpr/">LPR</a> and <a href="https://research.nvidia.com/labs/gear">GEAR</a>.
                 </p>
                 <p style="text-align:center">
                   <a href="mailto:bh7032@princeton.edu">Email</a> &nbsp;/&nbsp;
@@ -52,9 +47,56 @@
               </td>
             </tr>
           </tbody></table>
+
+          <div class="filter-buttons">
+            <button class="filter-btn active" data-filter="selected" onclick="filterPubs('selected')">Selected</button>
+            <button class="filter-btn" data-filter="robot-learning" onclick="filterPubs('robot-learning')">Robot Learning</button>
+            <button class="filter-btn" data-filter="computer-vision" onclick="filterPubs('computer-vision')">Computer Vision</button>
+            <button class="filter-btn" data-filter="reinforcement-learning" onclick="filterPubs('reinforcement-learning')">Reinforcement Learning</button>
+            <button class="filter-btn" data-filter="robot-automation" onclick="filterPubs('robot-automation')">Robot Automation</button>
+          </div>
+
           <table style="width:100%;border:0px;border-spacing:0px 10px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-        
-            <tr>
+
+            <!-- 2026 -->
+
+            <tr class="pub-row" data-topic="robot-learning selected">
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <div class="one">
+                  <img src='figures/graspgenx.png' width=100%>
+                </div>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <a href="https://cvpr.thecvf.com/virtual/2026/poster/36448">
+                  <span class="papertitle">GraspGen-X: Cross-Embodiment 6-DOF Diffusion-based Grasping</span>
+                </a>
+                <br>
+                Beining Han, Yu-Wei Chao, Erwin Coumans, Clemens Eppner, Jia Deng, Stan Birchfield, Adithyavairavan Murali
+                <br>
+                <em>The IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2026
+                <br>
+                <p></p>
+              </td>
+            </tr>
+
+            <tr class="pub-row" data-topic="robot-learning">
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <div class="one">
+                  <img src='figures/vitac.png' width=100%>
+                </div>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <a href="#PLACEHOLDER">
+                  <span class="papertitle">Learning Open-World Visual-Tactile Grasp Stability Prediction with
+Synthetic Data</span>
+                </a>
+                <br>
+                Beining Han, Gan Luyang, Derek Geng, Abhishek Joshi, Jia Deng
+                <p></p>
+              </td>
+            </tr>
+
+            <tr class="pub-row" data-topic="robot-learning selected">
               <td style="padding:16px;width:20%;vertical-align:middle">
                 <div class="one">
                   <img src='figures/forcetac.png' width=100%>
@@ -67,35 +109,94 @@
                 <br>
                 Beining Han, Abhishek Joshi, Jia Deng
                 <br>
-                <em>arXiv</em>, 2025
-                <br>
-                <p></p>
-              </td>
-            </tr>  
-
-            <tr>
-              <td style="padding:16px;width:20%;vertical-align:middle">
-                <div class="one">
-                  <img src='figures/infini-sim.png' width=100%>
-                </div>
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
-                <a href="https://arxiv.org/pdf/2505.10755">
-                  <span class="papertitle">Infinigen-Sim: Procedural Generation of Articulated Simulation Assets</span>
-                </a>
-                <br>
-                Abhishek Joshi, Beining Han, Jack Nugent, Yiming Zuo, Jonathan Liu, Hongyu Wen, Stamatis Alexandropoulos, Tao Sun, Alexander Raistrick, Gaowen Liu, Yi Shao, Jia Deng
-                <br>
-                <em>arXiv</em>, 2025
+                <em>IEEE International Conference on Robotics and Automation (ICRA)</em>, 2026
                 <br>
                 <p></p>
               </td>
             </tr>
 
-            <tr>
+            <tr class="pub-row" data-topic="robot-automation">
               <td style="padding:16px;width:20%;vertical-align:middle">
                 <div class="one">
-                  <img src='figures/auto_construct.png' width=100%>
+                  <img src='figures/rebar_assemble.png' width=100%>
+                </div>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <a href="https://www.sciencedirect.com/science/article/pii/S0926580525007113">
+                  <span class="papertitle">Mobile Robotic Rebar Cage Assembly via Imitation Learning</span>
+                </a>
+                <br>
+                Tao Sun, Beining Han, Jimmy Wu, Szymon Rusinkiewicz, Yi Shao
+                <br>
+                <em>Automation in Construction</em>, 2026
+                <br>
+                <p></p>
+              </td>
+            </tr>
+
+            <!-- 2025 -->
+
+            <tr class="pub-row" data-topic="robot-learning">
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <div class="one">
+                  <img src='figures/anybody.png' width=100%>
+                </div>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2505.14986">
+                  <span class="papertitle">AnyBody: A Benchmark Suite for Cross-Embodiment Manipulation</span>
+                </a>
+                <br>
+                Meenal Parakh, Alexandre Kirchmeyer, Beining Han, Jia Deng
+                <br>
+                <em>Workshop on Robot Hardware-Aware Intelligence, RSS</em>, 2025
+                <br>
+                <p></p>
+              </td>
+            </tr>
+
+            <tr class="pub-row" data-topic="computer-vision">
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <div class="one">
+                  <img src='figures/eval_depth.png' width=100%>
+                </div>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2507.00981">
+                  <span class="papertitle">Evaluating Robustness of Monocular Depth Estimation with Procedural Scene Perturbations</span>
+                </a>
+                <br>
+                Jack Nugent, Siyang Wu, Zeyu Ma, Beining Han, Meenal Parakh, Abhishek Joshi, Lingjie Mei, Alexander Raistrick, Xinyuan Li, Jia Deng
+                <br>
+                <em>Advances in Neural Information Processing Systems (NeurIPS)</em>, 2025
+                <br>
+                <p></p>
+              </td>
+            </tr>
+
+            <tr class="pub-row" data-topic="robot-learning">
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <div class="one">
+                  <img src='figures/infini_sim.png' width=100%>
+                </div>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2505.10755">
+                  <span class="papertitle">Procedural Generation of Articulated Simulation Assets</span>
+                </a>
+                <br>
+                Abhishek Joshi, Beining Han, Jack Nugent, Yiming Zuo, Jonathan Liu, Hongyu Wen, Stamatis Alexandropoulos, Tao Sun, Alexander Raistrick, Gaowen Liu, Yi Shao, Jia Deng
+                <br>
+                <em>Workshop on Learning to Simulate Robot Worlds, Conference on Robot Learning (CoRL)</em>, 2025
+                <br>
+                <p></p>
+              </td>
+            </tr>
+
+            <tr class="pub-row" data-topic="robot-automation">
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <div class="one">
+                  <img src='figures/rebar_grasp.png' width=100%>
                 </div>
               </td>
               <td style="padding:8px;width:80%;vertical-align:middle">
@@ -111,7 +212,9 @@
               </td>
             </tr>
 
-            <tr>
+            <!-- 2024 -->
+
+            <tr class="pub-row" data-topic="robot-learning selected">
               <td style="padding:16px;width:20%;vertical-align:middle">
                 <div class="one">
                   <img src='figures/fetchbench.png' width=100%>
@@ -130,7 +233,7 @@
               </td>
             </tr>
 
-            <tr>
+            <tr class="pub-row" data-topic="computer-vision">
               <td style="padding:16px;width:20%;vertical-align:middle">
                 <div class="one">
                   <div class="two" id='infinigen_indoors'>
@@ -152,7 +255,9 @@
               </td>
             </tr>
 
-            <tr>
+            <!-- 2023 -->
+
+            <tr class="pub-row" data-topic="computer-vision">
               <td style="padding:16px;width:20%;vertical-align:middle">
                 <div class="one">
                   <img src='figures/infinigen_nature.png' width=100%>
@@ -171,7 +276,9 @@
               </td>
             </tr>
 
-            <tr>
+            <!-- 2022 -->
+
+            <tr class="pub-row" data-topic="reinforcement-learning selected">
               <td style="padding:16px;width:20%;vertical-align:middle">
               </td>
               <td style="padding:8px;width:80%;vertical-align:middle">
@@ -179,7 +286,7 @@
                   <span class="papertitle">Off-policy Reinforcement Learning with Delayed Rewards</span>
                 </a>
                 <br>
-                Beining Han, Zhizhou Ren, Zuofan Wu, Yuan Zhou, Jian Peng 
+                Beining Han, Zhizhou Ren, Zuofan Wu, Yuan Zhou, Jian Peng
                 <br>
                 <em>Proceedings of the 39th International Conference on Machine Learning (ICML)</em>, 2022
                 <br>
@@ -187,7 +294,9 @@
               </td>
             </tr>
 
-            <tr>
+            <!-- 2021 -->
+
+            <tr class="pub-row" data-topic="reinforcement-learning">
               <td style="padding:16px;width:10%;vertical-align:middle">
               </td>
               <td style="padding:8px;width:80%;vertical-align:middle">
@@ -203,7 +312,7 @@
               </td>
             </tr>
 
-            <tr>
+            <tr class="pub-row" data-topic="reinforcement-learning">
               <td style="padding:16px;width:20%;vertical-align:middle">
               </td>
               <td style="padding:8px;width:80%;vertical-align:middle">
@@ -219,7 +328,7 @@
               </td>
             </tr>
 
-            <tr>              
+            <tr class="pub-row" data-topic="reinforcement-learning">
               <td style="padding:16px;width:20%;vertical-align:middle">
               </td>
               <td style="padding:8px;width:80%;vertical-align:middle">
@@ -235,17 +344,17 @@
               </td>
             </tr>
 
-            <tr>
+            <tr class="pub-row" data-topic="reinforcement-learning selected">
               <td style="padding:16px;width:20%;vertical-align:middle">
               </td>
               <td style="padding:8px;width:80%;vertical-align:middle">
-                <a href="https://proceedings.neurips.cc/paper/2021/hash/54e8912427a8d007ece906c577fdca60-Abstract.html">
+                <a href="https://openreview.net/forum?id=6FqKiVAdI3Y">
                   <span class="papertitle">DOP: Off-Policy Multi-Agent Decomposed Policy Gradients</span>
                 </a>
                 <br>
-                Beining Han*, Yihan Wang*, Tonghan Wang*, Heng Dong, Chongjie Zhang
+                Yihan Wang*, Beining Han*, Tonghan Wang*, Heng Dong, Chongjie Zhang
                 <br>
-                <em>International Conference on Learning Representations </em>, 2020
+                <em>International Conference on Learning Representations (ICLR)</em>, 2021
                 <br>
                 <p></p>
               </td>
@@ -259,7 +368,7 @@
               <td style="padding:0px">
                 <br>
                 <p style="text-align:right;font-size:small;">
-                  Design and source code from <a href="https://github.com/jonbarron/jonbarron.github.io">Jon Barron</a>.
+                  Design and source code from <a href="https://github.com/jonbarron/jonbarron.github.io">Jon Barron</a>. Credit to Claude Code.
                 </p>
               </td>
             </tr>
@@ -267,5 +376,22 @@
         </td>
       </tr>
     </table>
+
+    <script>
+      function filterPubs(topic) {
+        document.querySelectorAll('.pub-row').forEach(function(row) {
+          var topics = row.getAttribute('data-topic').split(' ');
+          if (topics.indexOf(topic) !== -1) {
+            row.classList.remove('hidden');
+          } else {
+            row.classList.add('hidden');
+          }
+        });
+        document.querySelectorAll('.filter-btn').forEach(function(btn) {
+          btn.classList.toggle('active', btn.getAttribute('data-filter') === topic);
+        });
+      }
+      filterPubs('selected');
+    </script>
   </body>
 </html>
