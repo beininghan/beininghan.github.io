@@ -42,7 +42,8 @@
               <td style="padding:16px;width:100%;vertical-align:middle">
                 <h2>News</h2>
                 <ul style="margin:0;padding-left:20px;">
-                  <li><strong>2026.06</strong> Attending CVPR 2026 at Denver.</li>
+                  <li><span class="highlight"><strong>2026.10</strong> <strong style="color:#d9230f;">I am on the job market now! Please contact me if there is a fit.</strong></span></li>
+                  <li><strong>2026.11</strong> Attending CORL 2026 at Austin, TX.</li>
                 </ul>
               </td>
             </tr>
@@ -127,6 +128,25 @@
               </td>
             </tr>
 
+            <tr class="pub-row" data-topic="robot-learning">
+              <td style="padding:16px;width:20%;vertical-align:middle">
+                <div class="one">
+                  <img src='figures/infini_sim.png' width=100%>
+                </div>
+              </td>
+              <td style="padding:8px;width:80%;vertical-align:middle">
+                <a href="https://arxiv.org/abs/2505.10755">
+                  <span class="papertitle">Procedural Generation of Articulated Simulation Assets</span>
+                </a>
+                <br>
+                Abhishek Joshi, Beining Han, Jack Nugent, Yiming Zuo, Jonathan Liu, Hongyu Wen, Stamatis Alexandropoulos, Tao Sun, Alexander Raistrick, Gaowen Liu, Yi Shao, Jia Deng
+                <br>
+                <em>The Conference On Robot Learning (CORL)</em>, 2026
+                <br>
+                <p></p>
+              </td>
+            </tr>
+
             <tr class="pub-row" data-topic="robot-automation">
               <td style="padding:16px;width:20%;vertical-align:middle">
                 <div class="one">
@@ -138,7 +158,7 @@
                   <span class="papertitle">Visual Sim-to-Real Learning for Robotic Insertion under Geometric Variations: Application to Rebar Installation</span>
                 </a>
                 <br>
-                Tao Sun, Beining Han, Patrick Yin, Rui Xu, Harry He, Abhishek Gupta, Szymon Rusinkiewicz, Yi Shao
+                Beining Han*, Tao Sun*, Patrick Yin, Rui Xu, Harry He, Abhishek Gupta, Szymon Rusinkiewicz, Yi Shao
                 <br>
                 <em>arXiv preprint</em>, 2026
                 <br>
@@ -200,25 +220,6 @@
                 Jack Nugent, Siyang Wu, Zeyu Ma, Beining Han, Meenal Parakh, Abhishek Joshi, Lingjie Mei, Alexander Raistrick, Xinyuan Li, Jia Deng
                 <br>
                 <em>Advances in Neural Information Processing Systems (NeurIPS)</em>, 2025
-                <br>
-                <p></p>
-              </td>
-            </tr>
-
-            <tr class="pub-row" data-topic="robot-learning">
-              <td style="padding:16px;width:20%;vertical-align:middle">
-                <div class="one">
-                  <img src='figures/infini_sim.png' width=100%>
-                </div>
-              </td>
-              <td style="padding:8px;width:80%;vertical-align:middle">
-                <a href="https://arxiv.org/abs/2505.10755">
-                  <span class="papertitle">Procedural Generation of Articulated Simulation Assets</span>
-                </a>
-                <br>
-                Abhishek Joshi, Beining Han, Jack Nugent, Yiming Zuo, Jonathan Liu, Hongyu Wen, Stamatis Alexandropoulos, Tao Sun, Alexander Raistrick, Gaowen Liu, Yi Shao, Jia Deng
-                <br>
-                <em>Workshop on Learning to Simulate Robot Worlds, Conference on Robot Learning (CoRL)</em>, 2025
                 <br>
                 <p></p>
               </td>
@@ -311,6 +312,9 @@
 
             <tr class="pub-row" data-topic="reinforcement-learning selected">
               <td style="padding:16px;width:20%;vertical-align:middle">
+                <div class="one selected-only">
+                  <img src='figures/delayed_rewards.png' width=100%>
+                </div>
               </td>
               <td style="padding:8px;width:80%;vertical-align:middle">
                 <a href="https://proceedings.mlr.press/v162/han22e.html">
@@ -377,13 +381,16 @@
 
             <tr class="pub-row" data-topic="reinforcement-learning selected">
               <td style="padding:16px;width:20%;vertical-align:middle">
+                <div class="one selected-only">
+                  <img src='figures/dop.png' width=100%>
+                </div>
               </td>
               <td style="padding:8px;width:80%;vertical-align:middle">
                 <a href="https://openreview.net/forum?id=6FqKiVAdI3Y">
                   <span class="papertitle">DOP: Off-Policy Multi-Agent Decomposed Policy Gradients</span>
                 </a>
                 <br>
-                Yihan Wang*, Beining Han*, Tonghan Wang*, Heng Dong, Chongjie Zhang
+                Beining Han*, Yihan Wang*, Tonghan Wang*, Heng Dong, Chongjie Zhang
                 <br>
                 <em>International Conference on Learning Representations (ICLR)</em>, 2021
                 <br>
@@ -398,6 +405,9 @@
             <tr>
               <td style="padding:0px">
                 <br>
+                <div style="position:absolute;left:-9999px;width:300px;" aria-hidden="true">
+                  <script type="text/javascript" id="mapmyvisitors" src="//mapmyvisitors.com/map.js?d=GYZHiCJzdAB-9F-RmOvOXz1K2ErbXqGttzXoGrGi0ho&cl=ffffff&w=a"></script>
+                </div>
                 <p style="text-align:right;font-size:small;">
                   Design and source code from <a href="https://github.com/jonbarron/jonbarron.github.io">Jon Barron</a>. Credit to Claude Code.
                 </p>
@@ -417,6 +427,9 @@
           } else {
             row.classList.add('hidden');
           }
+        });
+        document.querySelectorAll('.selected-only').forEach(function(fig) {
+          fig.style.display = topic === 'selected' ? '' : 'none';
         });
         document.querySelectorAll('.filter-btn').forEach(function(btn) {
           btn.classList.toggle('active', btn.getAttribute('data-filter') === topic);
